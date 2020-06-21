@@ -7,7 +7,9 @@ URL = "http://www.python.org"
 class PythonOrgSearch(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Firefox(executable_path='C:\\Users\\rac\\Documents\\workspace\\geckodriver-v0.26.0-win64\\geckodriver.exe')
+        #La siguiente línea solo funciona en mi maquina,asegurate de tener geckodriver en las variables del sistema
+        #self.driver = webdriver.Firefox(executable_path='C:\\Users\\rac\\Documents\\workspace\\geckodriver-v0.26.0-win64\\geckodriver.exe')
+        self.driver = webdriver.Firefox()
 
     def tearDown(self):
         self.driver.close()
